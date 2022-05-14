@@ -8,7 +8,12 @@ class AppTheme {
       appBarTheme:
           const AppBarTheme(color: primary, centerTitle: true, elevation: 0),
       textButtonTheme:
-          TextButtonThemeData(style: TextButton.styleFrom(primary: primary)));
+          TextButtonThemeData(style: TextButton.styleFrom(primary: primary)),
+      floatingActionButtonTheme:
+          const FloatingActionButtonThemeData(backgroundColor: primary),
+      elevatedButtonTheme: ElevatedButtonThemeData(
+          style: ElevatedButton.styleFrom(
+              primary: primary, shape: const StadiumBorder(), elevation: 0)));
 
   static final ThemeData darkTheme = ThemeData.dark().copyWith(
       primaryColor: Colors.indigo,
