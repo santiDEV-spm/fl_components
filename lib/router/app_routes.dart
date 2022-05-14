@@ -10,7 +10,7 @@ class AppRoutes {
     MenuOption(
         route: 'home',
         name: 'Home Screen',
-        screen: HomeScreen(),
+        screen: const HomeScreen(),
         icon: Icons.home),
     MenuOption(
         route: 'listview1',
